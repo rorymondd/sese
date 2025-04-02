@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年龄确认</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Age Verification Gate -->
+    <div id="age-gate">
+        <div class="prompt-box">
+            <!-- Added Title like the image -->
+            <div class="gate-title">❤️遍❤️哩❤️视❤️频❤️成❤️人❤️交❤️流❤️</div>
+            <h2>您是否已满18岁?</h2>
+            <p>
+                以下内容可能不适合未满18岁的人群观看，我们需要确认您的年龄。
+            </p>
+            <p class="english-text">
+                The following may not be suitable for people under the age of 18 and we need to confirm your age.
+            </p>
+            <div class="buttons">
+                <button id="btn-over-18">已满18岁</button>
+                <button id="btn-under-18">未满18岁</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Container for Over 18 -->
+    <div id="video-container-over" class="video-container">
+        <!-- IMPORTANT: Replace '一万次悲伤.mp4' with the actual path -->
+        <video id="video-over-18" src="一万次悲伤.mp4" playsinline webkit-playsinline controls muted>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Video Container for Under 18 -->
+    <div id="video-container-under" class="video-container">
+        <!-- IMPORTANT: Replace '心理作用.mp4' with the actual path -->
+        <video id="video-under-18" src="心里作用.mp4" playsinline webkit-playsinline controls muted>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
